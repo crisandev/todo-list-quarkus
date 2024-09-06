@@ -27,7 +27,7 @@ public class EditTask {
     @Inject
     TaskDAO taskDAO;
 
-    @POST
+    @PUT
     @RolesAllowed({"userRegistered"})
     @Path("/edit-task/{id}")
     @Produces(MediaType.APPLICATION_JSON)
